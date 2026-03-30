@@ -10,7 +10,7 @@ import { areTypesEquivalent } from "./type-equality";
  * Usage in tsconfig.json:
  * {
  *   "compilerOptions": {
- *     "plugins": [{ "name": "ts-prettify" }]
+ *     "plugins": [{ "name": "prettify-ts" }]
  *   }
  * }
  */
@@ -22,7 +22,7 @@ function init(modules: { typescript: typeof ts }) {
 
   function create(info: ts.server.PluginCreateInfo): ts.LanguageService {
     const { languageService, project } = info;
-    const log = (msg: string) => project.projectService.logger.info(`[ts-prettify] ${msg}`);
+    const log = (msg: string) => project.projectService.logger.info(`[prettify-ts] ${msg}`);
 
     log("create called");
 

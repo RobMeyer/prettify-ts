@@ -1,4 +1,4 @@
-# ts-prettify
+# prettify-ts
 
 `Prettify<T>` utility type that flattens TypeScript intersection types into readable single-object types, while preserving built-in types (Map, Set, Date, Promise, DOM types, TypedArrays, etc.).
 
@@ -20,7 +20,7 @@ Includes a **TypeScript Language Service Plugin** that shows the prettified type
 ## Usage — the type
 
 ```ts
-import type { Prettify } from "ts-prettify";
+import type { Prettify } from "prettify-ts";
 
 interface A {
   x: string;
@@ -47,7 +47,7 @@ Add to your project's `tsconfig.json`:
 ```json
 {
   "compilerOptions": {
-    "plugins": [{ "name": "ts-prettify" }]
+    "plugins": [{ "name": "prettify-ts" }]
   }
 }
 ```
