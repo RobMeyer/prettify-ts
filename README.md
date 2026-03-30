@@ -4,6 +4,16 @@
 
 Includes a **TypeScript Language Service Plugin** that shows the prettified type in VS Code hover tooltips.
 
+## Installation
+
+```sh
+npm install -D prettify-ts
+# or
+yarn add -D prettify-ts
+# or
+pnpm add -D prettify-ts
+```
+
 ## Scripts
 
 | Command                  | Description                                 |
